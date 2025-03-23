@@ -8,6 +8,7 @@ const PORT = 3000;
 app.set("view engine", "ejs");
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
+app.use(express.static("public"));
 
 // Home route
 app.get("/", (req, res) => {
