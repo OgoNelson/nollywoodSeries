@@ -1,8 +1,21 @@
 const express = require("express");
 const bodyParser = require("body-parser");
-const { series, home } = require("../database/data");
 const app = express();
 const PORT = 3000;
+const livereload = require("livereload");
+const connectLiveReload = require("connect-livereload");
+const { series, home } = require("../database/data");
+
+//Livereload code
+const liveReloadServer = livereload.createServer();
+liveReloadServer.watch("public");
+liveReloadServer.server.once("connection", () => {
+  setTimeout(() => {
+    liveReloadServer.refresh("/");
+  }, 100);
+});
+app.use(connectLiveReload());
+//End of livereload code
 
 // middleware
 app.set("view engine", "ejs");
