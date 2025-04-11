@@ -1,1 +1,5 @@
 @import "tailwindcss";
+
+:root {
+  --bgimg: rgba(44, 66, 156, 0.15);
+}

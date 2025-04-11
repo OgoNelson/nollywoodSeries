@@ -25,12 +25,12 @@ app.use(express.static("public"));
 
 // Home route
 app.get("/", (req, res) => {
-  res.render("../client/home", { data: home });
+  res.render("../client/pages/home", { data: home });
 });
 
 // Series route
 app.get("/series", (req, res) => {
-  res.render("../client/series", { data: series });
+  res.render("../client/pages/series", { data: series });
 });
 
 //Start server
