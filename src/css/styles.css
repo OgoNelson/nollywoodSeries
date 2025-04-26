@@ -3,3 +3,14 @@
 :root {
   --bgimg: rgba(44, 66, 156, 0.15);
 }
+.animated {
+  animation: slide-right 10s linear infinite;
+}
+@keyframes slide-right {
+  0% {
+    right: 0;
+  } /* Starting position */
+  100% {
+    right: 100%;
+  } /* Ending position (goes off-screen) */
+}
