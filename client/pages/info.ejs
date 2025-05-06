@@ -5,22 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/styles.css" />
-    <title>NWS: Series</title>
+    <title>NWS: info</title>
   </head>
   <body>
     <div
       class="flex flex-col relative min-h-[100vh] w-[100vw] bg-[url(/bgimg2.jpg)] bg-no-repeat bg-cover bg-center font-mono"
     >
-      <div class="pb-[20vh]">
-        <%- include("../components/nav"); %>
-        <div class="grid grid-cols-3 gap-8 h-[50vh] w-[80vw] my-0 mx-[auto]">
-          <% data.forEach(data => { %>
-          <img
-            class="h-[30vh] w-[20vw]"
-            src="<%= data.img %>"
-            alt="<%= data.Title %>"
-          />
-          <% }) %>
+      <div class="pb-[20vh]"><%- include("../components/nav"); %></div>
+      <div class="flex">
+        <div>
+          <img class="h-[40vh]" src="<%= data.img %>" alt="<%= data.Title %>" />
+          <div>content</div>
         </div>
       </div>
     </div>
