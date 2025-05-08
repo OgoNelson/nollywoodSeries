@@ -11,12 +11,12 @@
     <div
       class="flex flex-col relative min-h-[100vh] w-[100vw] bg-[url(/bgimg2.jpg)] bg-no-repeat bg-cover bg-center font-mono"
     >
-      <div class="pb-[20vh]"><%- include("../components/nav"); %></div>
-      <div class="flex">
+      <div><%- include("../components/nav"); %></div>
+      <div class="flex w-[80vw] h-[70vh] my-0 mx-[auto]">
         <div>
-          <img class="h-[40vh]" src="<%= data.img %>" alt="<%= data.Title %>" />
-          <div>content</div>
+          <img class="h-[60vh]" src="<%= data.img %>" alt="<%= data.Title %>" />
         </div>
+        <div>content</div>
       </div>
     </div>
   </body>

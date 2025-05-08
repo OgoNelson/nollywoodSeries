@@ -7,13 +7,13 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-blue-500: oklch(0.623 0.214 259.815);
-    --color-slate-700: oklch(0.372 0.044 257.287);
     --color-gray-50: oklch(0.985 0.002 247.839);
-    --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
     --text-xl: 1.25rem;
     --text-xl--line-height: calc(1.75 / 1.25);
+    --text-7xl: 4.5rem;
+    --text-7xl--line-height: 1;
     --text-8xl: 6rem;
     --text-8xl--line-height: 1;
     --radius-lg: 0.5rem;
@@ -213,20 +213,8 @@
   .grid {
     display: grid;
   }
-  .h-\[0vh\] {
-    height: 0vh;
-  }
-  .h-\[2\] {
-    height: 2;
-  }
   .h-\[9vh\] {
     height: 9vh;
-  }
-  .h-\[10vh\] {
-    height: 10vh;
-  }
-  .h-\[20\] {
-    height: 20;
   }
   .h-\[20vh\] {
     height: 20vh;
@@ -237,17 +225,17 @@
   .h-\[40vh\] {
     height: 40vh;
   }
-  .h-\[50\] {
-    height: 50;
-  }
   .h-\[50vh\] {
     height: 50vh;
   }
+  .h-\[60vh\] {
+    height: 60vh;
+  }
+  .h-\[70vh\] {
+    height: 70vh;
+  }
   .min-h-\[100vh\] {
     min-height: 100vh;
-  }
-  .w-\[8\] {
-    width: 8;
   }
   .w-\[8vw\] {
     width: 8vw;
@@ -257,9 +245,6 @@
   }
   .w-\[20vw\] {
     width: 20vw;
-  }
-  .w-\[25vw\] {
-    width: 25vw;
   }
   .w-\[30vw\] {
     width: 30vw;
@@ -288,9 +273,6 @@
   .justify-center {
     justify-content: center;
   }
-  .gap-4 {
-    gap: calc(var(--spacing) * 4);
-  }
   .gap-8 {
     gap: calc(var(--spacing) * 8);
   }
@@ -315,17 +297,11 @@
   .rounded-br-lg {
     border-bottom-right-radius: var(--radius-lg);
   }
-  .bg-black {
-    background-color: var(--color-black);
-  }
   .bg-blue-500 {
     background-color: var(--color-blue-500);
   }
   .bg-gray-50 {
     background-color: var(--color-gray-50);
-  }
-  .bg-slate-700 {
-    background-color: var(--color-slate-700);
   }
   .bg-white {
     background-color: var(--color-white);
@@ -359,6 +335,10 @@
   }
   .font-mono {
     font-family: var(--font-mono);
+  }
+  .text-7xl {
+    font-size: var(--text-7xl);
+    line-height: var(--tw-leading, var(--text-7xl--line-height));
   }
   .text-8xl {
     font-size: var(--text-8xl);
