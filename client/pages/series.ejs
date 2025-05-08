@@ -15,11 +15,12 @@
         <%- include("../components/nav"); %>
         <div class="grid grid-cols-3 gap-8 h-[50vh] w-[80vw] my-0 mx-[auto]">
           <% data.forEach(data => { %>
-          <img
-            class="h-[30vh] w-[20vw]"
-            src="<%= data.img %>"
-            alt="<%= data.Title %>"
-          />
+          <a href="http://localhost:3000/series/<%= data.Title %>"
+            ><img
+              class="h-[30vh] w-[20vw]"
+              src="<%= data.img %>"
+              alt="<%= data.Title %>"
+          /></a>
           <% }) %>
         </div>
       </div>

@@ -46,8 +46,13 @@ app.get("/series/:id", (req, res) => {
   if (selectedSeries) {
     res.render("../client/pages/info", { data: selectedSeries });
   } else {
-    res.status(404).render("../client/pages/error");
+    res.status(404).render("../client/pages/errorPage");
   }
+});
+
+//Middleware for handling error page
+app.all("*", (req, res) => {
+  res.status(404).render("../client/pages/errorPage");
 });
 
 //Start server
