@@ -6,18 +6,11 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-red-300: oklch(0.808 0.114 19.571);
-    --color-red-400: oklch(0.704 0.191 22.216);
-    --color-red-500: oklch(0.637 0.237 25.331);
-    --color-red-600: oklch(0.577 0.245 27.325);
     --color-red-700: oklch(0.505 0.213 27.518);
     --color-blue-500: oklch(0.623 0.214 259.815);
-    --color-slate-800: oklch(0.279 0.041 260.031);
     --color-slate-900: oklch(0.208 0.042 265.755);
-    --color-slate-950: oklch(0.129 0.042 264.695);
     --color-gray-50: oklch(0.985 0.002 247.839);
     --color-gray-800: oklch(0.278 0.033 256.848);
-    --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
     --text-xl: 1.25rem;
@@ -202,9 +195,6 @@
   .z-\[100\] {
     z-index: 100;
   }
-  .float-right {
-    float: right;
-  }
   .m-0 {
     margin: calc(var(--spacing) * 0);
   }
@@ -213,9 +203,6 @@
   }
   .my-0 {
     margin-block: calc(var(--spacing) * 0);
-  }
-  .mt-2 {
-    margin-top: calc(var(--spacing) * 2);
   }
   .mt-4 {
     margin-top: calc(var(--spacing) * 4);
@@ -235,23 +222,14 @@
       scrollbar-width: none;
     }
   }
-  .block {
-    display: block;
-  }
   .flex {
     display: flex;
   }
   .grid {
     display: grid;
   }
-  .h-\[0vh\] {
-    height: 0vh;
-  }
   .h-\[9vh\] {
     height: 9vh;
-  }
-  .h-\[10vh\] {
-    height: 10vh;
   }
   .h-\[13vh\] {
     height: 13vh;
@@ -271,14 +249,8 @@
   .h-\[50vh\] {
     height: 50vh;
   }
-  .h-\[60vh\] {
-    height: 60vh;
-  }
   .h-\[70vh\] {
     height: 70vh;
-  }
-  .h-\[80\] {
-    height: 80;
   }
   .h-\[80vh\] {
     height: 80vh;
@@ -355,38 +327,17 @@
   .rounded-br-lg {
     border-bottom-right-radius: var(--radius-lg);
   }
-  .bg-black {
-    background-color: var(--color-black);
-  }
   .bg-blue-500 {
     background-color: var(--color-blue-500);
   }
   .bg-gray-50 {
     background-color: var(--color-gray-50);
   }
-  .bg-red-300 {
-    background-color: var(--color-red-300);
-  }
-  .bg-red-400 {
-    background-color: var(--color-red-400);
-  }
-  .bg-red-500 {
-    background-color: var(--color-red-500);
-  }
-  .bg-red-600 {
-    background-color: var(--color-red-600);
-  }
   .bg-red-700 {
     background-color: var(--color-red-700);
   }
-  .bg-slate-800 {
-    background-color: var(--color-slate-800);
-  }
   .bg-slate-900 {
     background-color: var(--color-slate-900);
-  }
-  .bg-slate-950 {
-    background-color: var(--color-slate-950);
   }
   .bg-white {
     background-color: var(--color-white);
@@ -420,9 +371,6 @@
   }
   .text-center {
     text-align: center;
-  }
-  .align-middle {
-    vertical-align: middle;
   }
   .font-mono {
     font-family: var(--font-mono);
