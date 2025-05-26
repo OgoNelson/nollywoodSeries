@@ -5,11 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/c8a91d9047.js"
+      crossorigin="anonymous"
+    ></script>
     <title>NWS: Series</title>
   </head>
-  <body>
+  <body class="scrollbar-hidden">
     <div
-      class="flex flex-col relative min-h-[100vh] w-[100vw] bg-[url(/bgimg2.jpg)] bg-no-repeat bg-cover bg-center font-mono"
+      class="flex flex-col relative min-h-[100vh] w-[100vw] no-scrollbar overflow-hidden bg-[url(/bgimg2.jpg)] bg-no-repeat bg-cover bg-center font-mono"
     >
       <div class="pb-[20vh]">
         <%- include("../components/nav"); %>
@@ -24,6 +28,7 @@
           <% }) %>
         </div>
       </div>
+      <%- include("../components/mainFooter"); %>
     </div>
   </body>
 </html>
