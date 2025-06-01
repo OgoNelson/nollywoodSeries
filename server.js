@@ -4,7 +4,7 @@ const app = express();
 const PORT = 3000;
 const livereload = require("livereload");
 const connectLiveReload = require("connect-livereload");
-const { series, home } = require("../database/data");
+const { series, home } = require("./database/data");
 
 //Livereload code
 const liveReloadServer = livereload.createServer();

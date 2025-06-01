@@ -1,12 +1,12 @@
 {
   "name": "nollywoodseries",
   "version": "1.0.0",
-  "main": "./server/server.js",
+  "main": "./server.js",
   "scripts": {
     "build:css": "postcss src/css/styles.css -o public/css/styles.css",
     "watch:css": "postcss src/css/styles.css -o public/css/styles.css --watch",
     "dev": "nodemon -e js,ejs,json",
-    "start": "node ./server/server.js",
+    "start": "node ./server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
