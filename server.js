@@ -1,7 +1,8 @@
 const express = require("express");
 const bodyParser = require("body-parser");
+require("dotenv").config();
 const app = express();
-const PORT = 3000;
+const port = process.env.PORT || 3000;
 const livereload = require("livereload");
 const connectLiveReload = require("connect-livereload");
 const { series, home } = require("./database/data");
@@ -56,6 +57,6 @@ app.all("*", (req, res) => {
 });
 
 //Start server
-app.listen(PORT, () => {
-  console.log(`App is running on port ${PORT}`);
+app.listen(port, () => {
+  console.log(`App is running on port ${port}`);
 });
