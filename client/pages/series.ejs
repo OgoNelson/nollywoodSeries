@@ -19,7 +19,7 @@
         <%- include("../components/nav"); %>
         <div class="grid grid-cols-3 gap-8 h-[50vh] w-[80vw] my-0 mx-[auto]">
           <% data.forEach(data => { %>
-          <a href="http://localhost:3000/series/<%= data.Title %>"
+          <a href="./series/<%= data.Title %>"
             ><img
               class="h-[30vh] w-[20vw]"
               src="<%= data.img %>"
