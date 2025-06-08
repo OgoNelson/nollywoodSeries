@@ -13,15 +13,18 @@
   </head>
   <body class="scrollbar-hidden">
     <div
-      class="flex flex-col relative min-h-[100vh] w-[100vw] no-scrollbar overflow-hidden bg-[url(/bgimg2.jpg)] bg-no-repeat bg-cover bg-center font-mono"
+      class="flex flex-col relative min-h-[100vh] w-[100vw] md:min-h-[100vh] no-scrollbar bg-[url(/bgimg2.jpg)] bg-no-repeat bg-cover bg-center font-mono"
     >
       <div class="pb-[20vh]">
-        <%- include("../components/nav"); %>
-        <div class="grid grid-cols-3 gap-8 h-[50vh] w-[80vw] my-0 mx-[auto]">
+        <%- include("../components/mobileNav"); %> <%-
+        include("../components/nav"); %>
+        <div
+          class="grid grid-cols-2 gap-4 h-[80vh] w-[80vw] md:grid-cols-3 md:gap-6 md:h-[50vh] md:w-[80vw] lg:gap-8 my-0 mx-[auto]"
+        >
           <% data.forEach(data => { %>
           <a href="./series/<%= data.Title %>"
             ><img
-              class="h-[30vh] w-[20vw]"
+              class="h-[30vh] w-[60vw] md:h-[25vh] md:w-[40vw] lg:h-[30vh] lg:w-[20vw]"
               src="<%= data.img %>"
               alt="<%= data.Title %>"
           /></a>
