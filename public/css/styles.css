@@ -245,6 +245,9 @@
   .hidden {
     display: none;
   }
+  .h-\[1vh\] {
+    height: 1vh;
+  }
   .h-\[5vh\] {
     height: 5vh;
   }
@@ -269,8 +272,17 @@
   .h-\[95vh\] {
     height: 95vh;
   }
+  .h-\[100vh\] {
+    height: 100vh;
+  }
   .h-\[145vh\] {
     height: 145vh;
+  }
+  .h-\[150vh\] {
+    height: 150vh;
+  }
+  .h-\[vh\] {
+    height: vh;
   }
   .min-h-\[100vh\] {
     min-height: 100vh;
