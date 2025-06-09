@@ -19,7 +19,9 @@
         <%- include("../components/mobileNav"); %><%-
         include("../components/nav"); %>
       </div>
-      <div class="grid grid-cols-1 gap-3 h-[160vh] md:h-[110vh] lg:flex lg:justify-center w-[80vw] lg:h-[80vh] my-0 mx-[auto]">
+      <div
+        class="grid grid-cols-1 gap-3 h-[160vh] md:h-[110vh] lg:flex lg:justify-center w-[80vw] lg:h-[80vh] my-0 mx-[auto]"
+      >
         <div>
           <img
             class="h-[50vh] w-[80vw] rounded-s-lg lg:h-[80vh] lg:w-[30vw]"
@@ -30,17 +32,17 @@
         <div
           class="bg-gray-50 w-[80vw] h-[110vh] md:h-[60vh] p-4 lg:w-[50vw] lg:h-[80vh] lg:ml-1 overscroll-y-contain text-xl text-gray-800 rounded-e-lg"
         >
-          <h1>Title: <%= data.Title %></h1>
-          <h2>Plot: <%= data.plot %></h2>
-          <h3>Year: <%= data.Year %></h3>
-          <h3>Country: <%= data.Country %></h3>
-          <h3>Language: <%= data.Language %></h3>
-          <h3>Genre: <%= data.Genre %></h3>
-          <h3>Seasons: <%= data.Total_Seasons %></h3>
-          <h3>Status: <%= data.Status %></h3>
-          <h3>Subtitle: <%= data.Subtitle %></h3>
-          <h3>Rating: <%= data.rating %></h3>
-          <h3>Stars: <%= data.Stars %></h3>
+          <h3><span>Title:</span> <%= data.Title %></h3>
+          <h3><span>Plot:</span> <%= data.plot %></h3>
+          <h3><span>Year:</span> <%= data.Year %></h3>
+          <h3><span>Country:</span> <%= data.Country %></h3>
+          <h3><span>Language:</span> <%= data.Language %></h3>
+          <h3><span>Genre:</span> <%= data.Genre %></h3>
+          <h3><span>Seasons:</span> <%= data.Total_Seasons %></h3>
+          <h3><span>Status:</span> <%= data.Status %></h3>
+          <h3><span>Subtitle:</span> <%= data.Subtitle %></h3>
+          <h3><span>Rating:</span> <%= data.rating %></h3>
+          <h3><span>Stars:</span> <%= data.Stars %></h3>
         </div>
       </div>
       <%- include("../components/mainFooter"); %>
